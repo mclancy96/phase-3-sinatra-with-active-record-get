@@ -43,11 +43,11 @@ We'll continue building our Sinatra application using the code from the previous
 lesson. Run these commands to install the dependencies and set up the database:
 
 ```console
-$ bundle install
-$ bundle exec rake db:migrate db:seed
+bundle install
+bin/rake db:migrate db:seed
 ```
 
-> **Note**: Running `rake db:migrate db:seed` on one line will run the
+> **Note**: Running bin/rake db:migrate db:seed` on one line will run the
 > migrations first, then the seed file. It's a nice way to save a few
 > keystrokes!
 
@@ -59,7 +59,7 @@ You can view the models in the `app/models` directory, and the migrations in the
 Then, run the server with our new Rake task:
 
 ```console
-$ bundle exec rake server
+bin/rake server
 ```
 
 With that set up, let's work on getting Sinatra and Active Record working

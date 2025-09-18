@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+ruby "3.3.5"
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
@@ -26,12 +27,12 @@ gem "require_all"
 
 # Logger for Ruby 3.3+ compatibility
 
-gem 'logger'
+gem "logger"
 
 # Web servers
 
-gem 'puma'
-gem 'webrick'
+gem "puma"
+gem "webrick"
 
 # These gems will only be used when we are running the application locally
 group :development do
@@ -44,15 +45,21 @@ group :development do
   gem "rerun"
 
   gem "pry"
-  gem 'rubocop'
+  gem "rubocop"
 end
 
 # These gems will only be used when we are running tests
 group :test do
   gem "database_cleaner"
-  gem "rspec"
   gem "rack-test", "~> 1.1"
+  gem "rspec"
   gem "rspec-json_expectations", "~> 2.2"
 end
 
-
+gem "base64"
+gem "bigdecimal"
+gem "fiddle"
+gem "mutex_m"
+gem "ostruct"
+gem "rubocop-rake", "~> 0.7.1"
+gem "rubocop-rspec", "~> 3.7"
